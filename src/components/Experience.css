@@ -1,7 +1,13 @@
 .experience {
-  padding: 60px 2rem;
+  padding: 40px 1.5rem;
   max-width: 800px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .experience {
+    padding: 60px 2rem;
+  }
 }
 
 .section-title {

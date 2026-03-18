@@ -59,10 +59,24 @@ export default function Hero() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <div className="glass-panel profile-glass">
-            <div className="profile-placeholder"></div>
-            <div className="glass-decoration decoration-1"></div>
-            <div className="glass-decoration decoration-2"></div>
+        <div className="code-window glass-panel">
+          <div className="code-header">
+            <div className="code-dot red"></div>
+            <div className="code-dot yellow"></div>
+            <div className="code-dot green"></div>
+          </div>
+          <pre className="code-content">
+            <code>
+              <span className="code-keyword">const</span> <span className="code-variable">developer</span> <span className="code-operator">=</span> {"{"}
+              <br/>  <span className="code-property">name</span>: <span className="code-string">"Felipe Ortiz"</span>,
+              <br/>  <span className="code-property">role</span>: <span className="code-string">"Senior Frontend Engineer"</span>,
+              <br/>  <span className="code-property">skills</span>: [<span className="code-string">"VTEX IO"</span>, <span className="code-string">"React"</span>, <span className="code-string">"Next.js"</span>],
+              <br/>  <span className="code-property">passionate</span>: <span className="code-string">"UI/UX & Web Performance"</span>
+              <br/>{"}"};
+            </code>
+          </pre>
+          <div className="glass-decoration decoration-1"></div>
+          <div className="glass-decoration decoration-2"></div>
         </div>
       </motion.div>
     </section>

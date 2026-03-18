@@ -1,5 +1,11 @@
 .projects {
-  padding: 60px 2rem;
+  padding: 40px 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 60px 2rem;
+  }
 }
 
 .section-title {

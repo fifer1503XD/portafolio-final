@@ -1,4 +1,4 @@
-:root {
+:root, [data-theme='dark'] {
   --bg-color: #0d1117;
   --bg-gradient: radial-gradient(circle at 15% 50%, rgba(31, 111, 235, 0.15), transparent 40%),
                  radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.15), transparent 40%);
@@ -10,6 +10,21 @@
   --glass-bg: rgba(22, 27, 34, 0.6);
   --glass-border: rgba(255, 255, 255, 0.08);
   --font-base: "Geist", "Inter", system-ui, sans-serif;
+  --timeline-dot: #0d1117;
+}
+
+[data-theme='light'] {
+  --bg-color: #f6f8fa;
+  --bg-gradient: radial-gradient(circle at 15% 50%, rgba(31, 111, 235, 0.08), transparent 40%),
+                 radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 40%);
+  --text-primary: #1F2328;
+  --text-secondary: #656D76;
+  --accent-color: #0969da;
+  --accent-secondary: #8250df;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --timeline-dot: #ffffff;
 }
 
 html {

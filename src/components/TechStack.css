@@ -3,6 +3,21 @@
   overflow: hidden;
 }
 
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+}
+
+.section-icon {
+  color: var(--accent-color);
+}
+
 .marquee-container {
   position: relative;
   width: 100%;
@@ -49,7 +64,7 @@
   padding: 1rem 1.75rem;
   font-size: 1.05rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   white-space: nowrap;
   display: flex;
   align-items: center;

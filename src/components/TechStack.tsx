@@ -6,9 +6,10 @@ import {
   SiReact, SiNextdotjs, SiTypescript, SiGraphql, 
   SiNodedotjs, SiJavascript, SiHtml5, SiCss, 
   SiShopify, SiJest, SiTestinglibrary, SiFramer, 
-  SiTailwindcss, SiGit 
+  SiTailwindcss, SiGit, SiSass, SiLighthouse, SiBitbucket 
 } from "react-icons/si";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart, FaServer } from "react-icons/fa";
+import { useLanguage } from "@/context/LanguageContext";
 import "./TechStack.css";
 
 const technologies = [
@@ -26,10 +27,15 @@ const technologies = [
   { name: "Testing Library", icon: SiTestinglibrary, color: "#E33332" },
   { name: "Framer Motion", icon: SiFramer, color: "#0055FF" },
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-  { name: "Git", icon: SiGit, color: "#F05032" }
+  { name: "Git", icon: SiGit, color: "#F05032" },
+  { name: "Sass", icon: SiSass, color: "#CC6699" },
+  { name: "REST API", icon: FaServer, color: "#009688" },
+  { name: "Core Web Vitals", icon: SiLighthouse, color: "#F44B21" },
+  { name: "Bitbucket", icon: SiBitbucket, color: "#0052CC" }
 ];
 
 export default function TechStack() {
+  const { language } = useLanguage();
   const marqueeTech = [...technologies, ...technologies];
 
   return (
@@ -43,7 +49,7 @@ export default function TechStack() {
         >
           <h2 className="section-title">
             <Cpu className="section-icon" /> 
-            Technologies & Tools
+            {language === 'en' ? "Technologies & Tools" : "Tecnologías & Herramientas"}
           </h2>
         </motion.div>
       </div>

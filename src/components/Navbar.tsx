@@ -1,18 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon, Globe } from "lucide-react";
 import { useState } from "react";
+import { useTheme } from "@/context/ThemeContext";
+import { useLanguage } from "@/context/LanguageContext";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
+  const { language, toggleLanguage, t } = useLanguage();
 
   const links = [
-    { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: t("nav.about"), href: "#about" },
+    { name: t("nav.experience"), href: "#experience" },
+    { name: t("nav.projects"), href: "#projects" },
+    { name: t("nav.contact"), href: "#contact" },
   ];
 
   return (
@@ -34,6 +38,14 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
+          <div className="nav-toggles">
+            <button onClick={toggleLanguage} className="icon-btn" aria-label="Toggle Language" title={`Switch to ${language === 'en' ? 'Spanish' : 'English'}`}>
+              <Globe size={20} /> <span className="lang-text">{language.toUpperCase()}</span>
+            </button>
+            <button onClick={toggleTheme} className="icon-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Mode">
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -64,6 +76,14 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
+          <div className="mobile-nav-toggles">
+            <button onClick={toggleLanguage} className="mobile-nav-link text-left w-full flex align-center gap-2">
+              <Globe size={20} /> {language === "en" ? "Español" : "English"}
+            </button>
+            <button onClick={toggleTheme} className="mobile-nav-link text-left w-full flex align-center gap-2">
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />} {theme === "dark" ? (language === "en" ? "Light Mode" : "Modo Claro") : (language === "en" ? "Dark Mode" : "Modo Oscuro")}
+            </button>
+          </div>
         </motion.div>
       )}
     </motion.nav>

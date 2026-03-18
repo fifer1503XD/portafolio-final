@@ -2,9 +2,12 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 import "./Hero.css";
 
 export default function Hero() {
+  const { language } = useLanguage();
+
   return (
     <section className="hero container" id="about">
       <div className="hero-content">
@@ -13,14 +16,17 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="hero-subtitle text-gradient">Hi, my name is</p>
+          <p className="hero-subtitle text-gradient">
+            {language === 'en' ? "Hi, my name is" : "Hola, mi nombre es"}
+          </p>
           <h1 className="hero-title">Felipe Ortiz.</h1>
-          <h2 className="hero-heading">I build robust web experiences.</h2>
+          <h2 className="hero-heading">
+            {language === 'en' ? "I build robust web experiences." : "Construyo experiencias web sólidas."}
+          </h2>
           <p className="hero-description">
-            I'm a Full-Stack Software Developer specialized in{" "}
-            <span className="text-white font-medium">VTEX IO, React, and Next.js</span>.
-            I focus on creating premium, accessible, and highly performant digital products 
-            that deliver exceptional user experiences.
+            {language === 'en' ? "I'm a Full-Stack Software Developer specialized in " : "Soy Desarrollador de Software Full-Stack especializado en "}
+            <span className="hero-highlight">VTEX IO, React, and Next.js</span>.
+            {language === 'en' ? " I focus on creating premium, accessible, and highly performant digital products that deliver exceptional user experiences." : " Me enfoco en crear productos digitales premium, accesibles y de alto rendimiento que brindan experiencias de usuario excepcionales."}
           </p>
         </motion.div>
 
@@ -31,7 +37,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <a href="#projects" className="btn btn-primary">
-            View My Work <ArrowRight size={18} />
+            {language === 'en' ? "View My Work" : "Ver Mi Trabajo"} <ArrowRight size={18} />
           </a>
           <div className="hero-social">
             <a href="https://github.com" target="_blank" rel="noreferrer" className="social-icon">

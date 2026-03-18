@@ -11,7 +11,8 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  color: #fff;
+  color: var(--text-primary);
+  justify-content: center;
 }
 
 .section-icon {
@@ -66,7 +67,7 @@
 .timeline-role {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-primary);
   margin: 0;
 }
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail } from "lucide-react";
+import { Mail, Download } from "lucide-react";
 import "./Contact.css";
 
 export default function Contact() {
@@ -19,9 +19,14 @@ export default function Contact() {
           I'm currently looking for new opportunities. Whether you have a question, a project proposition, or just want to say hi, my inbox is always open!
         </p>
         
-        <a href="mailto:contact@example.com" className="btn btn-primary contact-btn">
-          Say Hello <Mail size={18} />
-        </a>
+        <div className="contact-actions">
+          <a href="mailto:contact@example.com" className="btn btn-primary contact-btn">
+            Say Hello <Mail size={18} />
+          </a>
+          <a href="/cv.pdf" className="btn btn-outline contact-btn" download="Felipe_Ortiz_CV.pdf">
+            Descargar CV <Download size={18} />
+          </a>
+        </div>
       </motion.div>
 
       <footer className="footer">

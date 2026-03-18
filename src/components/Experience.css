@@ -1,5 +1,5 @@
 .experience {
-  padding: 100px 2rem;
+  padding: 60px 2rem;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -46,7 +46,7 @@
 }
 
 .timeline-content {
-  padding: 1.5rem;
+  padding: 2rem;
   transition: transform 0.2s ease;
 }
 

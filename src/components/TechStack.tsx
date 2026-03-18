@@ -61,7 +61,7 @@ export default function TechStack() {
         <motion.div 
           className="marquee-content"
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ ease: "linear", duration: 30, repeat: Infinity }}
+          transition={{ ease: "linear", duration: 100, repeat: Infinity }}
         >
           {marqueeTech.map((tech, index) => {
             const Icon = tech.icon;
@@ -86,7 +86,7 @@ export default function TechStack() {
         <motion.div 
           className="marquee-content"
           animate={{ x: ["-50%", "0%"] }}
-          transition={{ ease: "linear", duration: 35, repeat: Infinity }}
+          transition={{ ease: "linear", duration: 90, repeat: Infinity }}
         >
           {[...marqueeTech].reverse().map((tech, index) => {
             const Icon = tech.icon;

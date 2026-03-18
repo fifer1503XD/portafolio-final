@@ -1,0 +1,45 @@
+.contact {
+  padding: 100px 2rem 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.contact-title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.contact-description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.contact-btn {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+
+.footer {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: var(--font-base);
+}

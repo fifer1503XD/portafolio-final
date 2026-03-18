@@ -1,0 +1,71 @@
+.tech-stack-section {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+.marquee-container.reverse {
+  margin-top: 0;
+}
+
+.marquee-fade-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to right, var(--bg-color), transparent);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee-fade-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(to left, var(--bg-color), transparent);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  gap: 1.5rem;
+  padding: 0 0.75rem;
+}
+
+.tech-badge {
+  padding: 1rem 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: transform 0.3s ease, border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.tech-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.tech-badge:hover {
+  transform: translateY(-5px);
+  border-color: var(--hover-color, var(--accent-color));
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.05);
+}

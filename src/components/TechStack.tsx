@@ -22,7 +22,6 @@ const technologies = [
   { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
   { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
   { name: "CSS3", icon: SiCss, color: "#1572B6" },
-  { name: "Shopify", icon: SiShopify, color: "#95BF47" },
   { name: "Jest", icon: SiJest, color: "#C21325" },
   { name: "Testing Library", icon: SiTestinglibrary, color: "#E33332" },
   { name: "Framer Motion", icon: SiFramer, color: "#0055FF" },

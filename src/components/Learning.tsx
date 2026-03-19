@@ -7,10 +7,10 @@ import "./Learning.css";
 
 const studies = [
   {
-    title: { en: "English Proficiency (B2/C1)", es: "Dominio del Inglés (B2/C1)" },
+    title: { en: "English Proficiency (B1)", es: "Dominio del Inglés (B1)" },
     description: {
-      en: "Currently taking advanced courses to achieve a C1 level, focusing on technical communication and international team collaboration.",
-      es: "Actualmente tomando cursos avanzados para alcanzar el nivel C1, con enfoque en comunicación técnica y colaboración con equipos internacionales."
+      en: "Currently taking courses to achieve a solid B1 level, focusing on technical communication and team collaboration.",
+      es: "Actualmente tomando cursos para alcanzar un nivel B1 sólido, con enfoque en comunicación técnica y colaboración en equipo."
     }
   },
   {

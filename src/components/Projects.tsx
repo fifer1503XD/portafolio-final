@@ -40,7 +40,7 @@ const projects = [
       es: "Optimización del ecosistema digital de Megatiendas. Mejoras arquitectónicas en el frontend para agilizar la compra y búsqueda de productos de supermercado."
     },
     tech: ["VTEX IO", "React", "TypeScript", "CSS", "HTML"],
-    live: "#"
+    live: "https://www.megatiendas.co/"
   },
   {
     title: "Elite Professional PE",
@@ -49,7 +49,7 @@ const projects = [
       es: "Soporte y desarrollo de nuevas funcionalidades B2B para Elite Professional en Perú. Implementación de flujos de cotización personalizados."
     },
     tech: ["VTEX IO", "React", "TypeScript", "CSS", "HTML"],
-    live: "#"
+    live: "https://www.eliteprofessional.com.pe/"
   },
   {
     title: "Ortopédicos Futuro Colombia",
@@ -58,7 +58,7 @@ const projects = [
       es: "Mantenimiento integral y refactorización de código legado para la tienda online de Ortopédicos Futuro, mejorando la puntuación de Lighthouse y SEO."
     },
     tech: ["VTEX IO", "React", "TypeScript", "CSS", "HTML"],
-    live: "#"
+    live: "https://www.ortopedicosfuturo.com/"
   },
   {
     title: "Pandora Colombia",

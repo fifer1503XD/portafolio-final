@@ -12,7 +12,7 @@
 I am a **Senior Frontend Engineer** with a deep passion for UI/UX, modern web architectures, and crafting pixel-perfect interfaces. I specialize in the React ecosystem (Next.js, TypeScript) and enterprise-level e-commerce platforms like VTEX IO. My code focuses on delivering exceptional user experiences without relying heavily on bloated frameworks, optimizing **Core Web Vitals** to the maximum.
 
 - 🔭 **Currently focused on**: Advanced Web Performance, Next.js (SSR / Server Components) & Architecture.
-- 🌱 **Currently learning**: MuleSoft Anypoint Platform, n8n Workflow Automation, and English Proficiency (C1).
+- 🌱 **Currently learning**: MuleSoft Anypoint Platform, n8n Workflow Automation, and English Proficiency (B1).
 - 💼 **Professional Impact**: Handled critical implementations for major international B2B and B2C enterprise platforms including **Tena, Saba, Casaideas, Megatiendas, and Softys**.
 - 💬 **Ask me about**: React, Next.js, Frontend Architecture, Custom CSS Design Systems (Glassmorphism), and VTEX IO.
 - 📫 **How to reach me**: [LinkedIn](https://linkedin.com/in/tu-perfil) | Correo: tu-correo@ejemplo.com

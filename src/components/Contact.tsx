@@ -27,7 +27,7 @@ export default function Contact() {
         </p>
         
         <div className="contact-actions">
-          <a href="mailto:contact@example.com" className="btn btn-primary contact-btn">
+          <a href="mailto:desarrolladorwebfelipeortiz@gmail.com" className="btn btn-primary contact-btn">
             {language === 'en' ? "Say Hello" : "Di Hola"} <Mail size={18} />
           </a>
           <a href="/cv.pdf" className="btn btn-outline contact-btn" download="Felipe_Ortiz_CV.pdf">

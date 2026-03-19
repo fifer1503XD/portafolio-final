@@ -68,7 +68,10 @@ export default function TechStack() {
               <div 
                 key={`${tech.name}-${index}`} 
                 className="tech-badge glass-panel"
-                style={{ "--hover-color": tech.color } as React.CSSProperties}
+                style={{ 
+                  "--hover-color": tech.color,
+                  animationDelay: `${index * 0.4}s` 
+                } as React.CSSProperties}
               >
                 <Icon className="tech-icon" style={{ color: tech.color }} />
                 <span>{tech.name}</span>
@@ -93,7 +96,10 @@ export default function TechStack() {
               <div 
                 key={`rev-${tech.name}-${index}`} 
                 className="tech-badge glass-panel"
-                style={{ "--hover-color": tech.color } as React.CSSProperties}
+                style={{ 
+                  "--hover-color": tech.color,
+                  animationDelay: `${index * 0.45}s` 
+                } as React.CSSProperties}
               >
                 <Icon className="tech-icon" style={{ color: tech.color }} />
                 <span>{tech.name}</span>

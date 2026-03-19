@@ -40,13 +40,13 @@ export default function Hero() {
             {language === 'en' ? "View My Work" : "Ver Mi Trabajo"} <ArrowRight size={18} />
           </a>
           <div className="hero-social">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="social-icon">
+            <a href="https://github.com/fifer1503XD" target="_blank" rel="noreferrer" className="social-icon">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/felipe-ortiz-bejarano-68a2ba137/" target="_blank" rel="noreferrer" className="social-icon">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:contact@example.com" className="social-icon">
+            <a href="mailto:desarrolladorwebfelipeortiz@gmail.com" className="social-icon">
               <Mail size={24} />
             </a>
           </div>
